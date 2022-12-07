@@ -33,22 +33,22 @@
     
     Expression:
     
-    Division     /
-    Addition     +
-    Subtract     -
-    Multiplication * 
-    Greater than   <
-    Less than      > 
-    Bracket left   (
-    Bracket right )
-    short [0-9]+ l
-    byte [0-9] c
-    long [0-9] d
-    if N
-    else M 
-    while W
-    begin B
-    end E
+    Division             /
+    Addition             +
+    Subtract             -
+    Multiplication       * 
+    Greater than         <
+    Less than            > 
+    Bracket left         (
+    Bracket right        )
+    short                [0-9]+ l
+    byte                 [0-9] c
+    long                 [0-9] d
+    if                   N
+    else                 M 
+    while                W
+    begin                B
+    end                  E
     
     [a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z]?[a-zA-Z]?  
     
