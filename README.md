@@ -1,10 +1,6 @@
 # test2
 
-(a) (15 Points) Define the rules for recognizing all lexemes as their proper token, and
-    clearly define integer token codes for each token required for this language
-
-    • Should have Regular Grammar, Regular Expression, or Finite Automat
-      defined
+(a)
 
 ==> Lexemes basically means sequence of meaningful characters. 
     For example if we have, print(a) --> here we have lexemes - print, (, a, )
@@ -46,8 +42,8 @@
     long                 [0-9] d
     if                   N
     else                 M 
-    while                W
-    begin                B
+    while                Q
+    begin                C
     end                  E
     
     [a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z]?[a-zA-Z]?  
@@ -57,7 +53,7 @@
 (c) LL grammer: It is basically a grammer for which ll parser can be gnerated. 
     FIRST/FOLLOW or FIRST/FIRST conflicts = no
     
-(d)   Its not ambiguous because not same rule for multiple 
+(d)   Its not ambiguous because not same rule for multiple. 
     
     
     Production Rules:
