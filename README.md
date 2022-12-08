@@ -33,10 +33,16 @@
     Addition             +
     Subtract             -
     Multiplication       * 
+    Module               %
     Greater than         <
-    Less than            > 
+    Less than            >
+    Less than Equal To     <=
+    Greater than Equal To  >=
+    Equal To             =
+    Not Equal To         !=
     Bracket left         (
     Bracket right        )
+    Assignment           A
     short                [0-9]+ l
     byte                 [0-9] c
     long                 [0-9] d
@@ -46,6 +52,7 @@
     begin                C
     end                  E
     
+    Variable names:
     [a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z]?[a-zA-Z]?  
     
 
