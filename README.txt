@@ -97,12 +97,18 @@
 <factor> --> `id` | `int_lit` | `float_lit` | `(` <expr> `)` 
 
 
-<zeq> --> <zrel> { (`!=`|`==`) <zrel> }
-<zrel> --> <zexpr> { (`<=`|`>=` | `<` | `>`) <zexpr> }   
+<zeq> --> ! <zrel> { (`!=`|`==`) <zrel> }
+<zeq> --> == <zrel>
+<zeq> --> | <zrel>
+<zrel> --> < = <zexpr> 
+<zrel> --> > = <zexpr>
+<zrel> --> <zexpr>
+<zrel> --> <zexpr>
 <zexpr> --> <zterm> % <zterm>
 <zexpr> --> <zterm> / <zterm>
 <zexpr> --> <zterm> * <zterm>
-<zterm> --> <zfactor> {  (`-`|`+`) <zfactor> }
+<zterm> --> <zfactor> - <zfactor>
+<zterm> --> <zfactor> + <zfactor>
 
 <zfactor> --> `id`
 <zfactor> --> `float_lit`
