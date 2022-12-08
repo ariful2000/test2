@@ -59,6 +59,7 @@
 
 (c) LL grammer: It is basically a grammer for which ll parser can be gnerated. 
     FIRST/FOLLOW or FIRST/FIRST conflicts = no
+    LL Grammar should pass no recursion (left hand) and disjoint test (pairwise).
     
 (d)   Its not ambiguous because not same rule for multiple. 
     
