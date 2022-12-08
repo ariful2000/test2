@@ -84,9 +84,10 @@
 
 <zfactor> --> `id` | `int_lit` | `float_lit` | `bool_lit` | `(` <zexpr> `)`
 
-(h) Parse table:
+(h) Parse table rules:
 
-<stmt> --> <if_stmt> | <while_stmt> | <as_s> | <block> 
+<stmt> --> <if_stmt> 
+<stmt> --> <while_stmt> | <as_s> | <block> 
 <block> --> `{` { <stmt>`;` } `}`
 <first_condit> -->  `first``(`<exp_bool>`)` <stmt> [ `second_condit` <stmt> ]
 <reapeat_wh> -->  `wh``(`<exp_bool>`)` <stmt> 
@@ -98,12 +99,16 @@
 
 <zeq> --> <zrel> { (`!=`|`==`) <zrel> }
 <zrel> --> <zexpr> { (`<=`|`>=` | `<` | `>`) <zexpr> }   
-<zexpr> --> <zterm> { (`%`|`*`|`\`) <zterm> }
+<zexpr> --> <zterm> % <zterm>
+<zexpr> --> <zterm> / <zterm>
+<zexpr> --> <zterm> * <zterm>
 <zterm> --> <zfactor> {  (`-`|`+`) <zfactor> }
 
-<zfactor> --> `id` | `int_lit` | `float_lit` | `bool_lit` | `(` <zexpr> `)`
-    
-    
+<zfactor> --> `id`
+<zfactor> --> `float_lit`
+<zfactor> --> `bool_lit`
+<zfactor> --> `lit_int`
+     
     
     
     
