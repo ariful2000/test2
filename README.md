@@ -49,7 +49,7 @@
     if                   N
     else                 M 
     while                Q
-    begin                C
+    start                C
     end                  E
     
     Variable names:
