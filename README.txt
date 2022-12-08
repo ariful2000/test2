@@ -64,9 +64,8 @@
 (d)   Its not ambiguous because not same rule for multiple things. 
     
     
-    Production Rules:
 
-(b)
+(b) Production Rules:
 
 <stmt> --> <if_stmt> | <while_stmt> | <as_s> | <block> 
 <block> --> `{` { <stmt>`;` } `}`
@@ -78,12 +77,12 @@
 <factor> --> `id` | `int_lit` | `float_lit` | `(` <expr> `)` 
 
 
-<beq> --> <brel> { (`!=`|`==`) <brel> }
-<brel> --> <bexpr> { (`<=`|`>=` | `<` | `>`) <bexpr> }   
-<bexpr> --> <bterm> { (`%`|`*`|`\`) <bterm> }
-<bterm> --> <bfactor> {  (`-`|`+`) <bfactor> }
+<zeq> --> <zrel> { (`!=`|`==`) <zrel> }
+<zrel> --> <zexpr> { (`<=`|`>=` | `<` | `>`) <zexpr> }   
+<zexpr> --> <zterm> { (`%`|`*`|`\`) <zterm> }
+<zterm> --> <zfactor> {  (`-`|`+`) <zfactor> }
 
-<bfactor> --> `id` | `int_lit` | `float_lit` | `bool_lit` | `(` <bexpr> `)`
+<zfactor> --> `id` | `int_lit` | `float_lit` | `bool_lit` | `(` <zexpr> `)`
     
     
     
