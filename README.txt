@@ -86,8 +86,8 @@
 
 (h) Parse table rules:
 
-<stmt> --> <if_stmt> 
-<stmt> --> <while_stmt> | <as_s> | <block> 
+<stmt> --> N stmt>
+<stmt> --> q<stmt> --> 
 <block> --> `{` { <stmt>`;` } `}`
 <first_condit> -->  `first``(`<exp_bool>`)` <stmt> [ `second_condit` <stmt> ]
 <reapeat_wh> -->  `wh``(`<exp_bool>`)` <stmt> 
