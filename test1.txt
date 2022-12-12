@@ -1,3 +1,6 @@
 test1
 
 
+int a = 5 + 10; 5asd
+
+5asd is not valid (error) because 5asd is not matching ID.
